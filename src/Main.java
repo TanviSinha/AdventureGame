@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
     static Player player;
     static Map<String, Room> rooms = new HashMap<>();
-    static String currentRoom = "Entrance";
+    static String currentRoom = "Entrance"; 
 
     public static void main(String[] args) {
         initializeGame();
