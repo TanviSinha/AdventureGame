@@ -33,7 +33,6 @@ public class Main {
     }
 
     static void initializeGame() {
-        // Initialize player
         player = new Player(100);
 
         Room entrance = new Room("You are at the start of the game entering of a mysterious place.");
@@ -55,11 +54,9 @@ public class Main {
         NPC merchant = new NPC("Neville The Key Giver", "This opens the treasure box.");
         forest.setNpcs(Arrays.asList(wiseMan, merchant)); // Two NPCs in the Forest
 
-        // Add enemy
         Enemy dungeonEnemy = new Enemy("Voldemort", 50);
         dungeon.setEnemy(dungeonEnemy);
 
-        // Add rooms to the map
         rooms.put("Entrance", entrance);
         rooms.put("Forest", forest);
         rooms.put("Dungeon", dungeon);
