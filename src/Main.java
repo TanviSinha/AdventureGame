@@ -87,7 +87,7 @@ public class Main {
         } else if (command.equals("run")) {
             if (room.hasEnemy()) {
                 System.out.println("You ran away!");
-                currentRoom = "Forest"; // Move to a safe room
+                currentRoom = "Forest";
             } else {
                 System.out.println("There is nothing to run from.");
             }
